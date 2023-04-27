@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="product.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+</head>
+
+
+<body>
+<div class="whatsapp-icon">
+  <a href="https://wa.me/1234567890" target="_blank">
+    <img src="ws.png" alt="WhatsApp Icon">
+  </a>
+</div>
+
+<!----------Top Header---------->
+<section class="headersec">
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+                <span>K3 SYSTEMS</span>
+            </div>
+            <ul>
+                <li><a href="k3sindex.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+	</div>
+</section>
+<!----------END---------->
+
+
+
+<!----------Retail Section---------->
+<section class="retail">
+    <div class="image">
+	    <img src="retail.png"
+             loading="lazy"/>
+	</div>
+    
+	<div class="box">
+	    <img src="whitebox.png"
+             loading="lazy"/>
+	        <h2>RETAIL ERP</h2>
+		        <p>Supermarket, Book & Stationary, Boutique, Car<br>Accessories, Computer Shop, Furniture, Pharmacy, Mini<br>Market, Pets Shop, Bicycle & Motor, Hardware Shop,<br>Salon & Beauty House and etc</p>
+	                <button class="blue-button">DEMO&nbsp;&nbsp;&nbsp;></button>
+	</div>
+</section>
+<!----------END---------->
+
+
+
+<!----------Retail System Section---------->
+<section>
+    <div class="system">
+	    <img src="cash.png"
+             loading="lazy"/>
+			<h2>OUR<br>RETAIL<br>ERP<br>SYSTEM</h2> 
+	</div>
+</section>
+<!----------END---------->
+
+
+
+<!----------F&B Section---------->
+<section class="fb">
+    <div class="image2">
+	    <img src="fb.jpg"
+             loading="lazy"/>
+	</div>
+    
+	<div class="box2">
+	    <img src="whitebox.png"
+             loading="lazy"/>
+	        <h2>F&B ERP</h2>
+		        <p>Café, Bistro, Cafeteria, Kopitiam, Fine-dining Restaurant,<br>Bubble Tea Shop, Fast Food, Steamboat Restaurant,<br>Mamak Store and etc</p>
+	                <button class="blue-button2">DEMO&nbsp;&nbsp;&nbsp;></button>
+	</div>
+</section>
+<!----------END---------->
+
+
+
+<!----------F&B System Section---------->
+<section>
+    <div class="system2">
+	    <img src="cash2.jpg"
+             loading="lazy"/>
+			<h2>OUR<br>F&B <br>ERP<br>SYSTEM</h2> 
+	</div>
+</section>
+<!----------END---------->
+
+
+
+<!----------Footer---------->
+<footer>
+       <div class="row">
+           <div class="col">
+               <img src="logo.png" class="logo">
+           </div>
+           <div class="col">
+               <h3>Office <div class="underline"><span></span></div> </h3>
+               <p>Menara KK, T6-01-03,</p>
+               <p>Tower 6, Maju Link,</p>
+               <p>Jln Lingkaran Tengah 2,</p>
+			   <p>Bandar Tasik Selatan,</p>
+               <p>57000 Kuala Lumpur</p>
+               <p class="email-id">enquiry@k3systems.com.my</p>
+               <h4>+603 9547 5266</h4>
+           </div>
+           <div class="col">
+               <h3>Links <div class="underline"><span></span></div></h3>
+               <ul>
+                   <li><a href="k3sindex.html">Home</a></li>
+                   <li><a href="product.html">Products</a></li>
+                   <li><a href="services.html">Services</a></li>
+                   <li><a href="about.html">About Us</a></li>
+                   <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+           </div>
+           <div class="col">
+               <h3>Contact Us <div class="underline"><span></span></div></h3>           
+               <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+					<i class="fab fa-linkedin-in"></i>
+               </div>
+           </div>
+       </div>
+       <hr>
+       <p class="copyright">© K3 SYSTEMS SDN BHD 2023</p>
+   </footer>
+<!----------END---------->
+
+
+<script>
+const textElements = document.querySelectorAll('.box');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('h2');
+    } else {
+      entry.target.classList.remove('h2');
+    }
+  });
+});
+
+textElements.forEach(element => {
+  observer.observe(element);
+});
+</script>
+
+</body>
+</html>

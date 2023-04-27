@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="k3sindex.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+</head>
+
+
+<body>
+<div class="whatsapp-icon">
+  <a href="https://wa.me/1234567890" target="_blank">
+    <img src="ws.png" alt="WhatsApp Icon">
+  </a>
+</div>
+
+<!----------Top Header---------->
+<section class="headersec">
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="logo.png">
+                <span>K3 SYSTEMS</span>
+            </div>
+            <ul>
+                <li><a href="k3sindex.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="title">
+            <h1 class="slide-left">ERP</h1>
+            <p class="slide-left">Enterprise<br>Resource<br>Planning</p>
+        </div>
+    </div>
+</section>
+<!----------END---------->
+
+
+
+<!----------First Section---------->
+<section class="first">
+    <div class="quote-box">
+        <h2>EASE YOUR BUSINESS, EASE YOUR LIFE</h2>
+           <p>K3 Systems specialized in the development and implementation of<br>retail management software and solution.</p>
+		   <p><br>Best known for the K3 ERP System, which has integrated with digital<br>payment solutions, in-store digital products & services,<br>self-service kiosk, membership and other Retail Management Solutions.
+        <div>
+            <a href="https://wa.me/1234567890">Contact Now</a>
+            <a href="product.html">Find Out More</a>
+        </div>
+    </div>
+</section>
+<!----------END---------->
+
+
+
+<!----------Second Section---------->
+<section class="second">
+    <div class="background"></div>
+	   <h1>Working With the Best Clients and Partners</h1>  
+		
+		<div class="image-wrapper">
+           <img src="kk.png" alt="POS Systems" class="image1">
+           <img src="bcafe.jpg" alt="POS Systems" class="image">
+           <img src="team.png" alt="POS Systems" class="image">
+           <img src="momentem.png" alt="Partner" class="image4">
+           <img src="happypay.png" alt="Partner" class="image">
+        </div>
+		
+		    <div class="image-text">
+              <p>Our Clients & Partners</p>
+            </div> 
+</section>
+<!----------END---------->
+
+
+
+<!----------Footer---------->
+<section>
+<div class="wrapper">
+      <div class="container">
+        <i class="fas fa-desktop"></i>
+        <span class="num" data-val="800">000</span>
+        <span class="text">POS Sytems Delivered</span>
+      </div>
+      <div class="container">
+        <i class="fas fa-smile-beam"></i>
+        <span class="num" data-val="740">000</span>
+        <span class="text">Happy Customers</span>
+      </div>
+      <div class="container">
+        <i class="fas fa-user-friends"></i>
+        <span class="num" data-val="2">000</span>
+        <span class="text">Partners</span>
+      </div>
+      <div class="container">
+        <i class="fas fa-star"></i>
+        <span class="num" data-val="780">000</span>
+        <span class="text">Five Stars</span>
+      </div>
+    </div>
+</section>
+<!----------END---------->
+
+
+
+<!----------Footer---------->
+<footer>
+       <div class="row">
+           <div class="col">
+               <img src="logo.png" class="logo">
+           </div>
+           <div class="col">
+               <h3>Office <div class="underline"><span></span></div> </h3>
+               <p>Menara KK, T6-01-03,</p>
+               <p>Tower 6, Maju Link,</p>
+               <p>Jln Lingkaran Tengah 2,</p>
+			   <p>Bandar Tasik Selatan,</p>
+               <p>57000 Kuala Lumpur</p>
+               <p class="email-id">enquiry@k3systems.com.my</p>
+               <h4>+603 9547 5266</h4>
+           </div>
+           <div class="col">
+               <h3>Links <div class="underline"><span></span></div></h3>
+               <ul>
+                   <li><a href="k3sindex.html">Home</a></li>
+                   <li><a href="product.html">Products</a></li>
+                   <li><a href="services.html">Services</a></li>
+                   <li><a href="about.html">About Us</a></li>
+                   <li><a href="contact.html">Contact Us</a></li>
+               </ul>
+           </div>
+           <div class="col">
+               <h3>Contact Us <div class="underline"><span></span></div></h3>
+               <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+					<i class="fab fa-linkedin-in"></i>
+               </div>
+           </div>
+       </div>
+       <hr>
+       <p class="copyright">© K3 SYSTEMS SDN BHD 2023</p>
+   </footer>
+<!----------END---------->
+
+
+
+<!--JavaScript: Changing Background-->
+<script>
+const images = ['wec1t.png', 'wec2t.png', 'wec3t.png'];
+let currentIndex = 0;
+
+function changeBackground() {
+  currentIndex++;
+  if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+  
+  
+  const header = document.querySelector('.header');
+  header.style.backgroundImage = `url(${images[currentIndex]})`;
+}
+  
+  
+setInterval(changeBackground, 3000);
+</script>
+<!----------End Section---------->
+
+
+
+<!--JavaScript: Hover Text-->
+<script>
+const images = document.querySelectorAll('.image-wrapper img');
+const text = document.querySelector('.image-text');
+
+images.forEach((image) => {
+  image.addEventListener('mouseover', () => {
+    text.style.display = 'block';
+    text.innerHTML = image.alt;
+  });
+  
+  image.addEventListener('mouseout', () => {
+    text.style.display = 'none';
+  });
+});
+</script>
+<!----------End Section---------->
+
+
+
+<!--JavaScript: Quotebox-->
+<script>
+const quote = document.getElementById("quote");
+const author = document.getElementById("author");
+const api_url = "https://api.quotable.io/random";
+
+async function getquote(url){
+    const response = await fetch(url);
+    var data = await response.json();
+    
+    quote.innerHTML = data.content;
+    author.innerHTML = data.author;
+}
+
+getquote(api_url);
+
+function tweet(){
+    window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML + "---- by " + author.innerHTML, "Tweet Window", "width=600, height=300");
+}
+
+</script>
+
+
+
+<!--JavaScript: Counting-->
+<script>let valueDisplays = document.querySelectorAll(".num");
+let interval = 4000;
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});</script>
+
+
+</body>
+</html>
